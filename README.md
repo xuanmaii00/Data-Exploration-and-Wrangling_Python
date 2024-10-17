@@ -105,6 +105,8 @@ The insights gathered will help pinpoint top-selling products, address potential
 
 **f. Transaction Types**
 
+![image](https://github.com/user-attachments/assets/b68f888d-4c0c-4fda-be3c-fd501fa6fae4)
+
 - There are 7 distinct `transType` values, with most transactions concentrated around types 2, 8, and 22.
 
 → Focus can be given to these transaction types for deeper analysis and optimization.
