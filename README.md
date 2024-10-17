@@ -68,6 +68,8 @@ The insights gathered will help pinpoint top-selling products, address potential
 
 **a. Missing Values**
 
+![image](https://github.com/user-attachments/assets/1d502add-376d-40b7-9b90-5957ec88b96d)
+
 - The `sender_id` column has 49,058 (3.71%) missing values.
 - The `receiver_id` column has 164,792 (12.45%) missing values.
 - The `extra_info` column has 1,317,879 (99.54%) missing values.
@@ -76,11 +78,15 @@ The insights gathered will help pinpoint top-selling products, address potential
 
 **b. Incorrect Data Types**
 
+![image](https://github.com/user-attachments/assets/9af94ef7-c2a3-4507-81e3-70f9d109da8b)
+
 - The `timeStamp` column has the wrong datatype (`object`).
 
 → Convert the `timeStamp` column to `datetime` format.
 
-**c. Data Summary**
+**c. Volume Data Summary**
+
+![image](https://github.com/user-attachments/assets/ca17c3f5-ac28-4a13-9ed7-6637ce9c2bbe)
 
 - **Min transaction volume**: 1
 - **Max transaction volume**: 78,691,477 (extremely high)
@@ -89,11 +95,11 @@ The insights gathered will help pinpoint top-selling products, address potential
 
 → The volume data is highly skewed to the right, with the mean being much larger than the median, indicating a few very large values pulling the mean upwards.
 
-**d. Trend (Distribution)**
+**d. Volume Trend (Distribution)**
 
 - The distribution of `volume` is right-skewed, showing that most transactions are concentrated around lower values, with a few extremely large transactions distorting the mean.
 
-**e. Outliers**
+**e. Volume Outliers**
 
 - The maximum value of 78,691,477 is a significant outlier, much higher than the third quartile (100,000), indicating the presence of extreme outliers.
 
